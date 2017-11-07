@@ -1,0 +1,32 @@
+﻿<Page x:Class="REST.Uprava_Uzivatele"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:REST"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Uprava_Uzivatele" Background="White">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Label Content="id"/>
+            <Label x:Name="id"/>
+            <Label Content="Jmeno"/>
+            <TextBox x:Name="jmeno"/>
+            <Label Content="Prijmeni"/>
+            <TextBox x:Name="prijmeni"/>
+            <Label Content="Rod_cislo"/>
+            <TextBox x:Name="rod_cislo"/>
+            <Label Content="Dat_nar"/>
+            <TextBox x:Name="dat_nar"/>
+            <Label Content="Pohlavi"/>
+            <TextBox x:Name="pohlavi"/>
+            <WrapPanel>
+                <Button x:Name="ulozit" Content="Ulozit" Margin="40,0,0,0" Click="ulozit_Click"></Button>
+                <Button x:Name="smazat" Content="Smazat" HorizontalAlignment="Right" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="40,0,0,0" Click="smazat_Click"></Button>
+            </WrapPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>
